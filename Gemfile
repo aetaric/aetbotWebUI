@@ -34,8 +34,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'passenger'
-gem 'twitch', '~> 0.1.0'
 gem 'omniauth-twitchtv', github: 'masterkain/omniauth-twitchtv'
+gem 'therubyracer'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

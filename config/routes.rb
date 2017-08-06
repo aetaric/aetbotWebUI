@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   root to: 'home#index'
   get "/auth/:provider/callback" => "session#create"
-  get "/signout" => "sessions#destroy", :as => :signout
+  get "/signout" => "session#destroy", :as => :signout
 
   resources :sessions
   resources :users

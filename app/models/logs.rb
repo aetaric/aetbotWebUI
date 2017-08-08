@@ -1,4 +1,4 @@
-class Log
+class Logs
   include Mongoid::Document
   store_in collection: "logs"
 

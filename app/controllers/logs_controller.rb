@@ -4,6 +4,7 @@ class LogsController < ApplicationController
     if @mods.channels.include? params[:channel]
       @logs = Logs.find_by channel: => params[:channel]
     else
-      redirect_to home_url
+      redirect_to '/'
+    end
   end
 end
